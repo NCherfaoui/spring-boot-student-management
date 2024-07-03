@@ -1,4 +1,4 @@
-FROM openjdk:11.0.16
+FROM openjdk:21
 LABEL authors="nassim"
 
 ARG JAR_FILE=target/*.jar
