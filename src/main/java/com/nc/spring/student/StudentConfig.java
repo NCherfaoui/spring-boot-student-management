@@ -22,6 +22,7 @@ public class StudentConfig {
                     "Alex",
                     "alex@example.com",
                     LocalDate.of(2005, 10, 5));
+
             repository.saveAll(
                     List.of(John, Alex)
             );
