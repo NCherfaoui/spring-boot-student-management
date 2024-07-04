@@ -35,4 +35,15 @@ jobs:
     - name: Build Docker Image # Étape pour construire l'image Docker
       run: docker build -t spring-boot-student-management . # Construit l'image Docker à partir du Dockerfile
 
-    # Ajoutez ici les étapes supplémentaires pour l'analyse de code et le déploiement
+    - name: Log in to Azure
+      uses: azure/login@v1
+      with:
+        creds: \${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Deploy to Azure Web App
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: nassim
+       # slot-name: <Nom-Slot> # Optionnel, si vous utilisez des slots
+        publish-profile: \${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+        package: \${{ github.workspace }}/target/*.jar
