@@ -1,3 +1,4 @@
+[![Java CI/CD with Maven](https://github.com/NCherfaoui/spring-boot-student-management/actions/workflows/maven.yml/badge.svg)](https://github.com/NCherfaoui/spring-boot-student-management/actions/workflows/maven.yml) 
 # Spring Boot Student Management
 
 This is a simple Spring Boot application for managing student data. The application provides basic CRUD operations on student entities.
