@@ -1,7 +1,7 @@
 services:
 
   db:
-    image: mysql:8.0
+    image: mysql:9.1
     command: --default-authentication-plugin=caching_sha2_password
     environment:
       MYSQL_ROOT_PASSWORD: password
