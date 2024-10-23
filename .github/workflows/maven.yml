@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest # Exécute le job sur la dernière version d'Ubuntu disponible
 
     steps: # Étapes du job
-    - uses: actions/checkout@v4.1.7 # Étape pour cloner le code source du dépôt
+    - uses: actions/checkout@v4.2.2 # Étape pour cloner le code source du dépôt
 
     - name: Set up JDK 21 # Étape pour configurer JDK 21
       uses: actions/setup-java@v4.2.2 # Utilise l'action setup-java pour configurer Java
