@@ -50,3 +50,4 @@ To run the database independently, use the following command:
 ```bash
 docker-compose up
 ```
+
